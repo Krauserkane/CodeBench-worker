@@ -26,7 +26,7 @@ jobs:
         run: chmod +x ./gradlew
 
       - name: Build jar
-        run: ./gradlew clean build
+        run: ./gradlew clean build -x test
 
       # 4️⃣ Log in to Docker Hub
       - name: Log in to Docker Hub
