@@ -24,7 +24,7 @@ COPY --from=build-env /usr/local/etc/isolate /usr/local/etc/isolate
 
 WORKDIR /app
 
-COPY worker-0.0.1-SNAPSHOT.jar target.jar
+COPY build/libs/worker-0.0.1-SNAPSHOT.jar target.jar
 
 ENTRYPOINT ["java","-jar","target.jar"]
 
